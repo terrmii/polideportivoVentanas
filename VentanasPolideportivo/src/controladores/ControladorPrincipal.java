@@ -19,6 +19,8 @@ public class ControladorPrincipal implements ActionListener {
 	public ControladorPrincipal(Principal principal2) {
 		principal = principal2;
 		principal.btnNewButtonUsuarios.addActionListener(this);
+		principal.btnNewButtonActividades.addActionListener(this);
+		principal.btnNewButtonUsuarios.addActionListener(this);
 	}
 	
 	public void inicializar() {
@@ -42,20 +44,21 @@ public class ControladorPrincipal implements ActionListener {
 			
 		}
 		else if(e.getSource() == principal.btnNewButtonInscripciones) {
-//			VistaInscripciones vistaInscripciones = new VistaInscripciones();
-//			Inscripciones inscripciones = new Inscripciones();
-//			
-//			ControladorInscripciones controladorI = new ControladorInscripciones();
-//			VistaInscripciones.setVisible
+			
+			VistaInscripciones vi = new VistaInscripciones();
+			ControladorInscripciones ci = new ControladorInscripciones(vi);
+			
+		
 		}
+		
 		else if(e.getSource() == principal.btnNewButtonActividades) {
 			
-			Actividades actividades = new Actividades();
 			VistaActividades va = new VistaActividades();
 			ControladorActividades ca = new ControladorActividades(va);
 			
 			ca.inicializar();
 			va.setVisible(true);
+			va.setModal(true);
 			
 		}
 

@@ -14,6 +14,7 @@ import javax.swing.SwingConstants;
 public class VistaInscripciones extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
+	public JButton btnNewButtonInscribir;
 
 	/**
 	 * Launch the application.
@@ -57,6 +58,10 @@ public class VistaInscripciones extends JDialog {
 				lblNewLabel.setBounds(126, 81, 181, 73);
 				contentPanel_1.add(lblNewLabel);
 			}
+			
+			btnNewButtonInscribir = new JButton("New button");
+			btnNewButtonInscribir.setBounds(165, 165, 89, 23);
+			contentPanel_1.add(btnNewButtonInscribir);
 		}
 		{
 			JPanel buttonPane = new JPanel();
@@ -75,5 +80,4 @@ public class VistaInscripciones extends JDialog {
 			}
 		}
 	}
-
 }
