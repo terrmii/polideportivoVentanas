@@ -15,9 +15,9 @@ import javax.swing.JTextField;
 public class VistaUsuarios extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField textFieldNombreApellido;
+	private JTextField textFieldDni;
+	private JTextField textFieldCodigo;
 
 	/**
 	 * Launch the application.
@@ -64,20 +64,20 @@ public class VistaUsuarios extends JDialog {
 		lblCodigo.setBounds(10, 178, 116, 14);
 		contentPanel.add(lblCodigo);
 		
-		textField = new JTextField();
-		textField.setBounds(160, 62, 181, 20);
-		contentPanel.add(textField);
-		textField.setColumns(10);
+		textFieldNombreApellido = new JTextField();
+		textFieldNombreApellido.setBounds(160, 62, 181, 20);
+		contentPanel.add(textFieldNombreApellido);
+		textFieldNombreApellido.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(160, 118, 181, 20);
-		contentPanel.add(textField_1);
+		textFieldDni = new JTextField();
+		textFieldDni.setColumns(10);
+		textFieldDni.setBounds(160, 118, 181, 20);
+		contentPanel.add(textFieldDni);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(160, 175, 181, 20);
-		contentPanel.add(textField_2);
+		textFieldCodigo = new JTextField();
+		textFieldCodigo.setColumns(10);
+		textFieldCodigo.setBounds(160, 175, 181, 20);
+		contentPanel.add(textFieldCodigo);
 		{
 			JPanel buttonPane = new JPanel();
 			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));

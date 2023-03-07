@@ -5,8 +5,12 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JDialog;
 
+import clases.Actividades;
+import clases.Inscripciones;
 import vista.Principal;
+import vista.VistaActividades;
 import vista.VistaUsuarios;
+import vista.VistaInscripciones;
 
 public class ControladorPrincipal implements ActionListener {
 
@@ -35,7 +39,27 @@ public class ControladorPrincipal implements ActionListener {
 			} catch (Exception e1) {
 				e1.printStackTrace();
 			}
+			
 		}
+		else if(e.getSource() == principal.btnNewButtonInscripciones) {
+//			VistaInscripciones vistaInscripciones = new VistaInscripciones();
+//			Inscripciones inscripciones = new Inscripciones();
+//			
+//			ControladorInscripciones controladorI = new ControladorInscripciones();
+//			VistaInscripciones.setVisible
+		}
+		else if(e.getSource() == principal.btnNewButtonActividades) {
+			
+			Actividades actividades = new Actividades();
+			VistaActividades va = new VistaActividades();
+			ControladorActividades ca = new ControladorActividades(va);
+			
+			ca.inicializar();
+			va.setVisible(true);
+			
+		}
+
+		
 		
 	}
 

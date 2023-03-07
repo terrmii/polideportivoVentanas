@@ -18,6 +18,7 @@ public class Principal extends JFrame {
 	public JButton btnNewButtonUsuarios;
 	public JButton btnNewButtonInscripciones;
 	public JButton btnNewButtonActividades;
+	
 	/**
 	 * Launch the application.
 	 */

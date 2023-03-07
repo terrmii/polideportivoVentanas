@@ -8,6 +8,7 @@ public class App {
 		
 		Principal ventanaP = new Principal();
 		
+		
 		ControladorPrincipal principalC = new ControladorPrincipal(ventanaP);
 		
 		principalC.inicializar();
