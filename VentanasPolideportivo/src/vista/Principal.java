@@ -15,7 +15,9 @@ import java.awt.event.ActionEvent;
 public class Principal extends JFrame {
 
 	private JPanel contentPane;
-
+	public JButton btnNewButtonUsuarios;
+	public JButton btnNewButtonInscripciones;
+	public JButton btnNewButtonActividades;
 	/**
 	 * Launch the application.
 	 */
@@ -36,6 +38,7 @@ public class Principal extends JFrame {
 	 * Create the frame.
 	 */
 	public Principal() {
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -50,24 +53,24 @@ public class Principal extends JFrame {
 		lblNewLabel.setBounds(10, 11, 414, 25);
 		contentPane.add(lblNewLabel);
 		
-		JButton btnNewButton_1 = new JButton("INSCRIPCIONES");
-		btnNewButton_1.setFont(new Font("Eras Demi ITC", Font.PLAIN, 11));
-		btnNewButton_1.setBounds(144, 108, 145, 23);
-		contentPane.add(btnNewButton_1);
+		btnNewButtonInscripciones = new JButton("INSCRIPCIONES");
+		btnNewButtonInscripciones.setFont(new Font("Eras Demi ITC", Font.PLAIN, 11));
+		btnNewButtonInscripciones.setBounds(144, 108, 145, 23);
+		contentPane.add(btnNewButtonInscripciones);
 		
-		JButton btnNewButton_1_1 = new JButton("USUARIOS");
-		btnNewButton_1_1.addActionListener(new ActionListener() {
+		btnNewButtonUsuarios = new JButton("USUARIOS");
+		btnNewButtonUsuarios.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 			}
 		});
-		btnNewButton_1_1.setFont(new Font("Eras Demi ITC", Font.PLAIN, 11));
-		btnNewButton_1_1.setBounds(144, 60, 145, 23);
-		contentPane.add(btnNewButton_1_1);
+		btnNewButtonUsuarios.setFont(new Font("Eras Demi ITC", Font.PLAIN, 11));
+		btnNewButtonUsuarios.setBounds(144, 60, 145, 23);
+		contentPane.add(btnNewButtonUsuarios);
 		
-		JButton btnNewButton_1_2 = new JButton("ACTIVIDADES");
-		btnNewButton_1_2.setFont(new Font("Eras Demi ITC", Font.PLAIN, 11));
-		btnNewButton_1_2.setBounds(144, 162, 145, 23);
-		contentPane.add(btnNewButton_1_2);
+		btnNewButtonActividades = new JButton("ACTIVIDADES");
+		btnNewButtonActividades.setFont(new Font("Eras Demi ITC", Font.PLAIN, 11));
+		btnNewButtonActividades.setBounds(144, 162, 145, 23);
+		contentPane.add(btnNewButtonActividades);
 	}
 }
